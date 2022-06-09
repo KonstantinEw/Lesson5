@@ -5,12 +5,16 @@
 }
 
 .container {
-    width: 1200px;
-    max-width: auto;
+    max-width: 1200px;
     padding: 0px 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background: #F5F5F5;
+}
+
+section {
+    background: #F5F5F5;
+    max-width: auto;
+    max-height: auto;
 }
 
 .prices__title {
@@ -29,6 +33,10 @@
     justify-content: space-between;
     list-style: none;
     padding: 0px;
+}
+
+.prices__item-container {
+    transition: transform .3s ease-in-out;
 }
 
 .item-container__list {
@@ -72,7 +80,7 @@
     padding-top: 10px;
 }
 
-.list__coast {
+.list__cost {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -96,7 +104,7 @@
     color: rgba(255, 255, 255, 0.5);
     background: #333333;
     border: 2px solid #F5F5F5;
-    height: 50px;
+    padding: 20px 0;
     padding-top: 10px;
 }
 
@@ -105,19 +113,18 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    align-items: center;
     text-align: center;
     text-transform: capitalize;
     color: #86878B;
     background:#FFFFFF;
     border: 1px solid #F5F5F5;
-    height: 50px;
-    padding-top: 10px;
+    padding: 15px 0;
 }
 
-.item-container__list:hover {
+.prices__item-container:hover {
+    cursor: pointer;
     box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
-    transition: 0.5s;
+    
     border-radius: 5px;
     transform: translateY(-15px);
 }
